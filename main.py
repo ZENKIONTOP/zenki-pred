@@ -47,6 +47,9 @@ async def mines(interaction: discord.Interaction, bet_amt: int, round_id : str):
     else:
         em = discord.Embed(color=0xff0000)
         em.add_field(name='Error', value="Invalid round id")
-        await interaction.response.send_message(embed=em)
+        await interaction.response.send_message(
+from keep_alive import keep_alive  
+keepalive()
 
-client.run('MTIyMDAwNDcxNzY1NzE5ODU5Mg.GwF-_z.ojeygkIsSBFdhVmv4_5w2DZNp0eMtjHwJzhy2M')
+bot = Bot(token=os.environ.get('token'))
+dp = Dispatcher(bot)
